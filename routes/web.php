@@ -20,3 +20,7 @@ Route::get('paragraph', 'LatihanController@paragraph');
 Route::get('table', 'LatihanController@table');
 Route::get('foto', 'LatihanController@foto');
 Route::get('about', 'LatihanController@costum1');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
